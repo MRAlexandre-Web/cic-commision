@@ -4,8 +4,48 @@
     box-sizing: border-box;
 }
 
-/* Navigation */
-.link > img{
-    width: 24px;
-    height: 24px;
+li{
+    list-style-type: none;
 }
+
+
+
+/* Navigation */
+
+header{
+    background: rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+
+.logo img {
+    width: 10rem;
+    object-fit: contain;
+    display: block;
+}
+
+.links{
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+
+.link{
+    border: 2px solid greenyellow;
+    padding: 10px 12px;
+    border-radius: 1.5em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    line-height: 1.5;
+}
+
+.link >svg{
+    width: 1.5rem;
+    display: block;
+}
+
