@@ -44,8 +44,66 @@ header{
     line-height: 1.5;
 }
 
-.link >svg{
+svg{
     width: 1.5rem;
     display: block;
 }
 
+/* .link:hover{
+
+} */
+
+/* Products */
+
+.product-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) ;
+    gap: 20px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.img-wrap img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   display: block;
+
+}
+
+.img-wrap{
+    width: 100%;
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.overlay {
+    /* background: green; */
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    opacity: 0;
+
+
+}
+
+.overlay svg{
+    width: 2.5rem;
+    color: white;
+    background-color: red;
+    padding: 5px;
+    border-radius: 20px;
+
+}
+
+.img-wrap:hover .overlay {
+    opacity: 1;
+}
